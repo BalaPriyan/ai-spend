@@ -1,0 +1,28 @@
+[project]
+name = "ai-spends-tracker"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "BalaPriyan", email = "balapriyanbalusamy@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.142.2",
+    "httpx>=0.28.1",
+    "pandas>=3.0.6",
+    "playwright",
+    "plotly>=7.1.0",
+    "pydantic>=2.13.5",
+    "requests>=2.34.2",
+    "sqlalchemy>=2.1.3",
+    "streamlit>=1.65.0",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+ai-spends-tracker = "ai_spends_tracker:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
